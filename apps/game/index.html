@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-phase="build">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNOCK-ON</title>
+    <meta name="description" content="Every action has an overreaction." />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Loading screen (beta): shown from the first paint until the workshop is ready; main.ts updates the message -->
+      <div id="splash" role="status" aria-live="polite">
+        <div class="ss-word">KNOCK<svg width="58" height="34" viewBox="0 0 58 34" aria-hidden="true"><path d="M2 25 L40 18 L40.6 24.6 Z" fill="#FF5B2E"/><circle cx="42" cy="21" r="6" fill="#FFC870"/><circle cx="42" cy="21" r="3" fill="#FFF4E0"/><path d="M49 13l4-5M51 21l5 1M48 28l3 4" stroke="#FF8A2A" stroke-width="2.5" stroke-linecap="round"/></svg>ON</div>
+        <div class="ss-bar" aria-hidden="true"><i></i></div>
+        <p class="ss-msg">Starting…</p>
+      </div>
+      <!-- Title screen (beta): Play now joins the session and starts building -->
+      <div id="title" role="dialog" aria-modal="true" aria-label="KNOCK-ON" hidden>
+        <div class="ss-word">KNOCK<svg width="58" height="34" viewBox="0 0 58 34" aria-hidden="true"><path d="M2 25 L40 18 L40.6 24.6 Z" fill="#FF5B2E"/><circle cx="42" cy="21" r="6" fill="#FFC870"/><circle cx="42" cy="21" r="3" fill="#FFF4E0"/><path d="M49 13l4-5M51 21l5 1M48 28l3 4" stroke="#FF8A2A" stroke-width="2.5" stroke-linecap="round"/></svg>ON</div>
+        <div class="ss-tag">Every action has an overreaction.</div>
+        <button class="ti-play primary-blue" type="button">Play now</button>
+      </div>
+      <!-- Glass Lab HUD (D77, UI_UX v1.1 §3): everything floats over the full-bleed viewport. ui/hud.ts fills it. -->
+      <main id="viewport">
+        <canvas tabindex="0" aria-label="The machine (3D view)" aria-describedby="kb-help"></canvas>
+        <p id="kb-help" class="sr-only">Build with the keyboard: 1 to 0 or [ and ] choose a part; arrow keys move the cursor, Enter places; R, T and Y rotate; V selects, E wires, and in the Wire tool [ and ] step through ports; Shift and arrows orbit the camera. Space lets it rip, Backspace stops. Ctrl K opens the command palette. Tab moves into the controls.</p>
+        <div id="overlay"></div>
+        <div id="scrim" aria-hidden="true"></div>
+        <section id="worldcard" class="glass build-surface" aria-label="World"></section>
+        <section id="sessionbar" class="glass build-surface" aria-label="Session"></section>
+        <nav id="viewrail" class="glass build-surface" aria-label="View"></nav>
+        <aside id="inspector" class="glass" aria-label="Inspector" aria-hidden="true"></aside>
+        <div id="transport" class="glass build-surface" role="toolbar" aria-label="Transport"></div>
+        <section id="tray" class="glass build-surface" aria-label="Parts"></section>
+        <div id="toasts"></div>
+        <div id="toolbadge" aria-hidden="true"></div>
+        <div id="chat"><div class="lines" aria-live="polite"></div><input maxlength="280" aria-label="Chat message" placeholder="Say something (Enter sends, Esc closes)" /></div>
+        <div id="perf" class="hud" hidden></div>
+        <div id="countdown" role="timer" aria-live="off" hidden></div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

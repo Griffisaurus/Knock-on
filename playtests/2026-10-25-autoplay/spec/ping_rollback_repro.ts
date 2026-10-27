@@ -1,0 +1,22 @@
+// Repro: PING relay lost after a rollback that re-simulates the PING's tick (m3.wTick / wFired survive restore()).
+import { makeId, metresToPos, snappedEuler } from '../../../packages/format/src/index.ts';
+import { loadJolt } from '../../../packages/jolt/src/index.ts';
+import { partDef, propSteps } from '../../../packages/parts-data/src/index.ts';
+import { Machine } from '../../../packages/sim/src/index.ts';
+let n = 0;
+const parts: any[] = [], links: any[] = [];
+const add = (type: string, x: number, props: Record<string, number> = {}) => { const d = partDef(type)!; const id = makeId(1, ++n); parts.push({ id, type, pos: [metresToPos(x), 0, 0], rot: snappedEuler(0, 0, 0), flags: 0, props: Object.entries(props).map(([k, v]) => propSteps(d, k, v)).sort((a, b) => a[0] - b[0]) }); return id; };
+const port = (id: number, name: string) => partDef(parts.find((p) => p.id === id).type)!.ports.findIndex((q) => q.name === name);
+const link = (a: number, ap: string, b: number, bp: string) => links.push({ id: makeId(1, ++n), kind: 'cable_signal', from: { part: a, port: port(a, ap) }, to: { part: b, port: port(b, bp) }, via: [], points: [], length: 0 });
+const ringer = add('ringer', 0, { time: 2 });
+const tx = add('ping', 0.5, { pair: 2, mode: 0 });
+const rx = add('ping', 1.5, { pair: 2, mode: 1 });
+const bang = add('bangstick', 2.5);
+link(ringer, 'out', tx, 'in'); link(rx, 'out', bang, 'detonator');
+const J = await loadJolt('single');
+const m = new Machine(J, { parts, links }, { checkpointEvery: 60 });
+const run = (to: number, tag: string) => { const got: string[] = []; while (m.st.tick < to) { m.step(); for (const e of m.drainEvents() as any[]) if (['PingRx', 'Detonate', 'Ring'].includes(e.kind)) got.push(`${e.kind}@${e.tick}`); } console.log(tag, got.join(' ') || '(none)'); };
+run(400, 'first pass   0→400:');
+console.log('restore(180) →', m.restore(180));
+run(400, 'second pass  →400:');
+m.destroy();

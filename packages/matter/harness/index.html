@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matter harness</title>
+<style>
+  body { font: 13px/1.45 ui-monospace, Consolas, monospace; background: #101318; color: #d6dbe4; margin: 16px; }
+  h1 { font-size: 15px; margin: 0 0 8px; }
+  .row { display: grid; grid-template-columns: 18px 320px 1fr; gap: 8px; padding: 2px 0; border-bottom: 1px solid #1d222b; }
+  .ok { color: #6fd08c; } .bad { color: #ff6b6b; } .meh { color: #8a93a6; }
+  #progress { color: #e0b44c; margin: 8px 0; min-height: 1.4em; }
+  canvas { border: 1px solid #222; margin-top: 8px; max-width: 100%; }
+</style>
+</head>
+<body>
+<h1>KNOCK-ON Matter harness (MX)</h1>
+<div id="summary"></div>
+<div id="progress"></div>
+<div id="rows"></div>
+<canvas id="view" width="900" height="300"></canvas>
+<script type="module" src="./main.ts"></script>
+</body>
+</html>

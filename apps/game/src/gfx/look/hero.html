@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNOCK-ON · Tinker Lab hero (D79 proof)</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0b0d12; color: #e8ebf2; font: 12px/1.4 ui-monospace, Consolas, monospace; overflow: hidden; }
+      canvas { position: absolute; left: 0; top: 0; display: block; }
+      #hud { position: fixed; right: 8px; top: 8px; background: #11141bdd; padding: 8px 10px; border-radius: 6px; white-space: pre; pointer-events: none; }
+      body.clean #hud { display: none; }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div id="hud">starting…</div>
+    <script type="module" src="./hero.ts"></script>
+  </body>
+</html>

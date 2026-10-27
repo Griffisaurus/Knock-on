@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNOCK-ON · Matter determinism spike</title>
+  </head>
+  <body>
+    <div class="check">
+      <h1>Matter determinism spike</h1>
+      <p class="detail">Integer fixed-point granular PBD (SIMULATION §8) on WebGPU. The GPU kernels must match the independent CPU reference bit for bit, and the 1M-grain × 10,000-tick run must repeat with identical checksums. Query: <code>?big=0</code> skips the big run, <code>?bigTicks=</code>, <code>?bigN=</code>, <code>?n=</code>, <code>?ticks=</code>.</p>
+      <div id="rows"></div>
+      <p class="detail" id="progress"></p>
+      <canvas id="view" width="720" height="300" style="width: 100%; background: var(--kn-graphite); border-radius: 8px; margin-top: 12px"></canvas>
+      <p class="detail" id="summary">Running…</p>
+    </div>
+    <script type="module" src="/src/spike-matter.ts"></script>
+  </body>
+</html>

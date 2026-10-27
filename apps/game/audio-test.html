@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNOCK-ON · audio test</title>
+    <style>
+      body { font: 14px/1.4 system-ui, sans-serif; background: #111318; color: #e6e6e6; margin: 16px; }
+      button { margin: 2px; padding: 4px 10px; background: #252a35; color: #e6e6e6; border: 1px solid #3a4150; border-radius: 4px; cursor: pointer; }
+      table { border-collapse: collapse; margin-top: 8px; }
+      td, th { padding: 2px 10px; border-bottom: 1px solid #2a2f3a; text-align: right; }
+      td:first-child, th:first-child { text-align: left; }
+      .bad { color: #ff6b6b; } .ok { color: #7bd88f; }
+      section { margin-bottom: 16px; }
+    </style>
+  </head>
+  <body>
+    <h1>Audio test</h1>
+    <section id="live"></section>
+    <section>
+      <button id="offline">Run offline render checks</button>
+      <div id="out"></div>
+    </section>
+    <script type="module" src="/src/audio-test.ts"></script>
+  </body>
+</html>

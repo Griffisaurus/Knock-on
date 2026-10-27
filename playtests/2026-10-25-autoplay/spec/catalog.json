@@ -1,0 +1,13921 @@
+{
+ "parts": [
+  {
+   "type": "thud",
+   "name": "THUD",
+   "family": "rollers",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 7,
+   "bounds": {
+    "min": [
+     -0.11,
+     -0.11,
+     -0.11
+    ],
+    "max": [
+     0.11,
+     0.11,
+     0.11
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "boing",
+   "name": "BOING",
+   "family": "rollers",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.12,
+     -0.12,
+     -0.12
+    ],
+    "max": [
+     0.12,
+     0.12,
+     0.12
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "stitch",
+   "name": "STITCH",
+   "family": "rollers",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 0.15,
+   "bounds": {
+    "min": [
+     -0.0375,
+     -0.0375,
+     -0.0375
+    ],
+    "max": [
+     0.0375,
+     0.0375,
+     0.0375
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "helio",
+   "name": "HELIO",
+   "family": "rollers",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 0.08,
+   "bounds": {
+    "min": [
+     -0.125,
+     -0.175,
+     -0.125
+    ],
+    "max": [
+     0.125,
+     0.155,
+     0.125
+    ]
+   },
+   "ports": [
+    {
+     "name": "knot",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "brik",
+   "name": "BRIK",
+   "family": "frame",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 3.6,
+   "bounds": {
+    "min": [
+     -0.1,
+     -0.05,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.05,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {
+    "mortar": {
+     "label": "Mortar (N·s)",
+     "type": "float",
+     "def": 12,
+     "min": 4,
+     "max": 40,
+     "step": 1
+    }
+   }
+  },
+  {
+   "type": "plank",
+   "name": "PLANK",
+   "family": "frame",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 6,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.05,
+     -0.5
+    ],
+    "max": [
+     0.05,
+     0.05,
+     0.5
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "slope",
+   "name": "SLOPE",
+   "family": "frame",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 0,
+   "bounds": {
+    "min": [
+     -0.3,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.3,
+     0.25,
+     0.1
+    ]
+   },
+   "ports": [],
+   "props": {
+    "angle": {
+     "label": "Angle",
+     "type": "angle",
+     "def": 20,
+     "min": 5,
+     "max": 60,
+     "step": 5
+    }
+   }
+  },
+  {
+   "type": "ledge",
+   "name": "LEDGE",
+   "family": "frame",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 0,
+   "bounds": {
+    "min": [
+     -0.2,
+     0,
+     -0.2
+    ],
+    "max": [
+     0.2,
+     0.05,
+     0.2
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "fulcrum",
+   "name": "FULCRUM",
+   "family": "frame",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 2.5,
+   "bounds": {
+    "min": [
+     -0.3,
+     -0.065,
+     -0.1
+    ],
+    "max": [
+     0.3,
+     0.045,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "end_l",
+     "ch": "tension",
+     "dir": "both"
+    },
+    {
+     "name": "end_r",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "anchor",
+   "name": "ANCHOR",
+   "family": "frame",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 0,
+   "bounds": {
+    "min": [
+     -0.025,
+     0,
+     -0.025
+    ],
+    "max": [
+     0.025,
+     0.05,
+     0.025
+    ]
+   },
+   "ports": [
+    {
+     "name": "hook",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "sheave",
+   "name": "SHEAVE",
+   "family": "frame",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 0.35,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.05,
+     -0.025
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.025
+    ]
+   },
+   "ports": [
+    {
+     "name": "axle",
+     "ch": "tension",
+     "dir": "both"
+    },
+    {
+     "name": "mount",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "treadway",
+   "name": "TREADWAY",
+   "family": "drive",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 2.3,
+   "bounds": {
+    "min": [
+     -0.3,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.3,
+     0.1,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "drive_l",
+     "ch": "spin",
+     "dir": "both"
+    },
+    {
+     "name": "drive_r",
+     "ch": "spin",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "cog",
+   "name": "COG",
+   "family": "drive",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 0,
+   "bounds": {
+    "min": [
+     -0.105,
+     -0.105,
+     -0.0275
+    ],
+    "max": [
+     0.105,
+     0.105,
+     0.0275
+    ]
+   },
+   "ports": [
+    {
+     "name": "axle",
+     "ch": "spin",
+     "dir": "both"
+    }
+   ],
+   "props": {
+    "size": {
+     "label": "Size",
+     "type": "enum",
+     "def": 1,
+     "values": [
+      "S",
+      "M",
+      "L"
+     ]
+    }
+   }
+  },
+  {
+   "type": "motor",
+   "name": "MOTOR",
+   "family": "drive",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 1.6,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.095
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.095
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    },
+    {
+     "name": "out",
+     "ch": "spin",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "direction": {
+     "label": "Direction",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "CW",
+      "CCW"
+     ]
+    }
+   }
+  },
+  {
+   "type": "gale",
+   "name": "GALE",
+   "family": "air",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 0.9,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "mains",
+   "name": "MAINS",
+   "family": "power",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 1.8,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "power",
+     "dir": "out"
+    },
+    {
+     "name": "in",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "on": {
+     "label": "On at start",
+     "type": "bool",
+     "def": 1
+    }
+   }
+  },
+  {
+   "type": "stomp_pad",
+   "name": "STOMP PAD",
+   "family": "power",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 1.2,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.03,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "weight": {
+     "label": "Trigger weight",
+     "type": "kg",
+     "def": 0.5,
+     "min": 0.05,
+     "max": 20,
+     "step": 0.05
+    }
+   }
+  },
+  {
+   "type": "the_button",
+   "name": "THE BUTTON",
+   "family": "power",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.084,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "wick",
+   "name": "WICK",
+   "family": "boom",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 0.35,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.2,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "flame",
+     "ch": "heat",
+     "dir": "both"
+    }
+   ],
+   "props": {
+    "lit": {
+     "label": "Lit at start",
+     "type": "bool",
+     "def": 1
+    }
+   }
+  },
+  {
+   "type": "bangstick",
+   "name": "BANGSTICK",
+   "family": "boom",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 0.8,
+   "bounds": {
+    "min": [
+     -0.143,
+     -0.039,
+     -0.05
+    ],
+    "max": [
+     0.16,
+     0.061,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "detonator",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "fuse",
+     "ch": "heat",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "fuse": {
+     "label": "Fuse",
+     "type": "seconds",
+     "def": 2,
+     "min": 0.5,
+     "max": 5,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "snipper",
+   "name": "SNIPPER",
+   "family": "contraptions",
+   "ship": "M1",
+   "kind": "static",
+   "mass": 1.4,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.15,
+     0.1,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "close",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "topple_tile",
+   "name": "TOPPLE TILES",
+   "family": "fun",
+   "ship": "M1",
+   "kind": "dynamic",
+   "mass": 0.2,
+   "bounds": {
+    "min": [
+     -0.015,
+     -0.075,
+     -0.0375
+    ],
+    "max": [
+     0.015,
+     0.075,
+     0.0375
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "fuzz",
+   "name": "FUZZ",
+   "family": "rollers",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 0.058,
+   "bounds": {
+    "min": [
+     -0.0325,
+     -0.0325,
+     -0.0325
+    ],
+    "max": [
+     0.0325,
+     0.0325,
+     0.0325
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "pig_iron",
+   "name": "PIG IRON",
+   "family": "rollers",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 6.5,
+   "bounds": {
+    "min": [
+     -0.06,
+     -0.06,
+     -0.06
+    ],
+    "max": [
+     0.06,
+     0.06,
+     0.06
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "vortex",
+   "name": "VORTEX",
+   "family": "frame",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0,
+   "bounds": {
+    "min": [
+     -0.4,
+     0,
+     -0.4
+    ],
+    "max": [
+     0.4,
+     0.45,
+     0.4
+    ]
+   },
+   "ports": [],
+   "props": {
+    "size": {
+     "label": "Size",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Wide",
+      "Slim"
+     ]
+    }
+   }
+  },
+  {
+   "type": "sprong",
+   "name": "SPRONG",
+   "family": "frame",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 1.8,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.05,
+     0.15
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "scoop",
+   "name": "SCOOP",
+   "family": "frame",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 0.45,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "bail",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "flap",
+   "name": "FLAP",
+   "family": "frame",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.15,
+     -0.0375,
+     -0.02
+    ],
+    "max": [
+     0.15,
+     0.0125,
+     0.28
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "mode": {
+     "label": "Mode",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Signal",
+      "Passive"
+     ]
+    },
+    "close": {
+     "label": "Auto-close (0 = next pulse)",
+     "type": "seconds",
+     "def": 0,
+     "min": 0,
+     "max": 30,
+     "step": 0.5
+    }
+   }
+  },
+  {
+   "type": "dynamo",
+   "name": "DYNAMO",
+   "family": "drive",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 4.5,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.095
+    ],
+    "max": [
+     0.15,
+     0.2,
+     0.095
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "spin",
+     "dir": "in"
+    },
+    {
+     "name": "out",
+     "ch": "power",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "turbine",
+   "name": "TURBINE",
+   "family": "drive",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 1.4,
+   "bounds": {
+    "min": [
+     -0.13,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.13,
+     0.395,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "spin",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "puffer",
+   "name": "PUFFER",
+   "family": "air",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 1.6,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.15,
+     0.2,
+     0.1
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "cell",
+   "name": "CELL",
+   "family": "power",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.2,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "power",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "capacity": {
+     "label": "Capacity (s at 200 W)",
+     "type": "seconds",
+     "def": 30,
+     "min": 5,
+     "max": 120,
+     "step": 5
+    }
+   }
+  },
+  {
+   "type": "suncell",
+   "name": "SUNCELL",
+   "family": "power",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.7,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.15,
+     0.021,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "power",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "lamp",
+   "name": "LAMP",
+   "family": "power",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.5,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.2,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "torch",
+   "name": "TORCH",
+   "family": "power",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.4,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.1,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "on": {
+     "label": "On at start",
+     "type": "bool",
+     "def": 0
+    },
+    "mode": {
+     "label": "Signal",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Toggle",
+      "On",
+      "Off"
+     ]
+    }
+   }
+  },
+  {
+   "type": "burning_glass",
+   "name": "BURNING GLASS",
+   "family": "power",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.3,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {
+    "focal": {
+     "label": "Focal length",
+     "type": "metres",
+     "def": 0.3,
+     "min": 0.1,
+     "max": 1,
+     "step": 0.01
+    }
+   }
+  },
+  {
+   "type": "toggle",
+   "name": "TOGGLE",
+   "family": "power",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.4,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.19,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    },
+    {
+     "name": "out_power",
+     "ch": "power",
+     "dir": "out"
+    },
+    {
+     "name": "out_signal",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "on": {
+     "label": "On at start",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "ringer",
+   "name": "RINGER",
+   "family": "power",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.5,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.04
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.04
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "time": {
+     "label": "Time",
+     "type": "seconds",
+     "def": 5,
+     "min": 1,
+     "max": 30,
+     "step": 0.5
+    }
+   }
+  },
+  {
+   "type": "delay",
+   "name": "DELAY",
+   "family": "power",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.35,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.045
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.045
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "delay": {
+     "label": "Delay",
+     "type": "seconds",
+     "def": 1,
+     "min": 0.1,
+     "max": 30,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "t_plunger",
+   "name": "T-PLUNGER",
+   "family": "boom",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 2.5,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.3,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "skyrocket",
+   "name": "SKYROCKET",
+   "family": "boom",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 0.3,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.12,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.18,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "fuse",
+     "ch": "heat",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "fuse": {
+     "label": "Fuse",
+     "type": "seconds",
+     "def": 0.5,
+     "min": 0.2,
+     "max": 5,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "big_top",
+   "name": "BIG TOP",
+   "family": "boom",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 18,
+   "bounds": {
+    "min": [
+     -0.3,
+     0,
+     -0.205
+    ],
+    "max": [
+     0.29,
+     0.416,
+     0.205
+    ]
+   },
+   "ports": [
+    {
+     "name": "fuse",
+     "ch": "heat",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "elevation": {
+     "label": "Elevation",
+     "type": "angle",
+     "def": 30,
+     "min": 15,
+     "max": 55,
+     "step": 5
+    },
+    "power": {
+     "label": "Power",
+     "type": "int",
+     "def": 3,
+     "min": 1,
+     "max": 5
+    }
+   }
+  },
+  {
+   "type": "cork_blaster",
+   "name": "CORK BLASTER",
+   "family": "boom",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 0.9,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.15,
+     0.1,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "fire",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "pull",
+     "ch": "tension",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "punchline",
+   "name": "PUNCHLINE",
+   "family": "contraptions",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 4,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.15,
+     0.2,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "trigger",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "gotcha_box",
+   "name": "GOTCHA BOX",
+   "family": "contraptions",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 3,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.12
+    ]
+   },
+   "ports": [
+    {
+     "name": "crank",
+     "ch": "spin",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "glint",
+   "name": "GLINT",
+   "family": "rollers",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.0054,
+   "bounds": {
+    "min": [
+     -0.008,
+     -0.008,
+     -0.008
+    ],
+    "max": [
+     0.008,
+     0.008,
+     0.008
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "bearing",
+   "name": "BEARING",
+   "family": "rollers",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.0167,
+   "bounds": {
+    "min": [
+     -0.008,
+     -0.008,
+     -0.008
+    ],
+    "max": [
+     0.008,
+     0.008,
+     0.008
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "glidepath_booster",
+   "name": "BOOSTER",
+   "family": "frame",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.15,
+     -0.09,
+     -0.025
+    ],
+    "max": [
+     0.15,
+     0.03,
+     0.025
+    ]
+   },
+   "ports": [
+    {
+     "name": "drive",
+     "ch": "spin",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "spindeck",
+   "name": "SPINDECK",
+   "family": "frame",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 2,
+   "bounds": {
+    "min": [
+     -0.2,
+     0,
+     -0.2
+    ],
+    "max": [
+     0.2,
+     0.1,
+     0.2
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "spin",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "brake": {
+     "label": "Brake",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "lift",
+   "name": "LIFT",
+   "family": "frame",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 3,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.3
+    ],
+    "max": [
+     0.15,
+     1.12,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    },
+    {
+     "name": "call",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "arrive",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "travel": {
+     "label": "Travel",
+     "type": "metres",
+     "def": 1,
+     "min": 0.1,
+     "max": 4,
+     "step": 0.1
+    },
+    "speed": {
+     "label": "Speed (m/s)",
+     "type": "float",
+     "def": 0.25,
+     "min": 0.05,
+     "max": 1,
+     "step": 0.05
+    }
+   }
+  },
+  {
+   "type": "rack",
+   "name": "RACK",
+   "family": "drive",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.7,
+   "bounds": {
+    "min": [
+     -0.5,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.5,
+     0.11,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "pinion",
+     "ch": "spin",
+     "dir": "both"
+    }
+   ],
+   "props": {
+    "length": {
+     "label": "Length",
+     "type": "metres",
+     "def": 1,
+     "min": 0.2,
+     "max": 2,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "ram",
+   "name": "RAM",
+   "family": "drive",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 1.1,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.25
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.25
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    },
+    {
+     "name": "fire",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "lance",
+   "name": "LANCE",
+   "family": "power",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.9,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.04
+    ],
+    "max": [
+     0.1,
+     0.1,
+     0.04
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "mirror",
+   "name": "MIRROR",
+   "family": "power",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.3,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.018
+    ],
+    "max": [
+     0.05,
+     0.2,
+     0.018
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "splitter",
+   "name": "SPLITTER",
+   "family": "power",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.5,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "tripwire",
+   "name": "TRIPWIRE",
+   "family": "power",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.3,
+   "bounds": {
+    "min": [
+     -0.0545,
+     0,
+     -0.045
+    ],
+    "max": [
+     0.0425,
+     0.1,
+     0.045
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "mode": {
+     "label": "Trigger",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Break",
+      "Lit"
+     ]
+    }
+   }
+  },
+  {
+   "type": "ping",
+   "name": "PING",
+   "family": "power",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.25,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.045
+    ],
+    "max": [
+     0.05,
+     0.098,
+     0.045
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "pair": {
+     "label": "Pair colour",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Ignition",
+      "Volt",
+      "Beam",
+      "Cobalt",
+      "Plasma",
+      "Graphite"
+     ]
+    },
+    "mode": {
+     "label": "Mode",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Tx",
+      "Rx"
+     ]
+    }
+   }
+  },
+  {
+   "type": "maglock",
+   "name": "MAGLOCK",
+   "family": "power",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 3,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.09
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.09
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    },
+    {
+     "name": "eye",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "powder_keg",
+   "name": "POWDER KEG",
+   "family": "boom",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 6,
+   "bounds": {
+    "min": [
+     -0.1,
+     -0.15,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.17,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "fuse",
+     "ch": "heat",
+     "dir": "in"
+    },
+    {
+     "name": "detonator",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "fuse": {
+     "label": "Fuse",
+     "type": "seconds",
+     "def": 2,
+     "min": 0.5,
+     "max": 5,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "jitterjuice",
+   "name": "JITTERJUICE",
+   "family": "boom",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.4,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.05,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "skyshow",
+   "name": "SKYSHOW",
+   "family": "boom",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 1.6,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.16
+    ],
+    "max": [
+     0.15,
+     0.2,
+     0.17
+    ]
+   },
+   "ports": [
+    {
+     "name": "fuse",
+     "ch": "heat",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "altitude": {
+     "label": "Burst altitude",
+     "type": "metres",
+     "def": 6,
+     "min": 2,
+     "max": 12,
+     "step": 0.5
+    },
+    "pattern": {
+     "label": "Pattern",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Peony",
+      "Chrysanthemum",
+      "Willow",
+      "Ring",
+      "Palm",
+      "Crossette",
+      "Heart",
+      "Starburst",
+      "Glitter"
+     ]
+    }
+   }
+  },
+  {
+   "type": "flamer",
+   "name": "FLAMER",
+   "family": "boom",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 1.2,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.15,
+     0.1,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "on",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "mode": {
+     "label": "Mode",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Gas",
+      "Powered"
+     ]
+    },
+    "on": {
+     "label": "Open at start",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "popper",
+   "name": "POPPER",
+   "family": "boom",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.12,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.15,
+     0.07
+    ]
+   },
+   "ports": [
+    {
+     "name": "string",
+     "ch": "tension",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "snaptrap",
+   "name": "SNAPTRAP",
+   "family": "contraptions",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.15,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.05,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "bonker",
+   "name": "BONKER",
+   "family": "contraptions",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 1,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.05,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.35,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "swing",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "flinger",
+   "name": "FLINGER",
+   "family": "contraptions",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 5,
+   "bounds": {
+    "min": [
+     -0.2,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.2,
+     0.3,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "release",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "trigger",
+     "ch": "tension",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "angle": {
+     "label": "Launch angle",
+     "type": "angle",
+     "def": 45,
+     "min": 30,
+     "max": 70,
+     "step": 5
+    }
+   }
+  },
+  {
+   "type": "wrecker",
+   "name": "WRECKER",
+   "family": "contraptions",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 20,
+   "bounds": {
+    "min": [
+     -0.095,
+     -0.095,
+     -0.095
+    ],
+    "max": [
+     0.095,
+     0.115,
+     0.095
+    ]
+   },
+   "ports": [
+    {
+     "name": "hook",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "pinger",
+   "name": "PINGER",
+   "family": "contraptions",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.9,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.16
+    ]
+   },
+   "ports": [
+    {
+     "name": "fire",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "paddle",
+   "name": "PADDLE",
+   "family": "contraptions",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.8,
+   "bounds": {
+    "min": [
+     -0.035,
+     -0.06,
+     -0.035
+    ],
+    "max": [
+     0.252,
+     0.025,
+     0.077
+    ]
+   },
+   "ports": [
+    {
+     "name": "flip",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "bumper",
+   "name": "BUMPER",
+   "family": "contraptions",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.075,
+     0,
+     -0.075
+    ],
+    "max": [
+     0.075,
+     0.1,
+     0.075
+    ]
+   },
+   "ports": [
+    {
+     "name": "kick",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "pin",
+   "name": "PINS",
+   "family": "fun",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.1,
+   "bounds": {
+    "min": [
+     -0.025,
+     -0.055,
+     -0.025
+    ],
+    "max": [
+     0.025,
+     0.095,
+     0.025
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "stacker",
+   "name": "STACKERS",
+   "family": "fun",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.6,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.015,
+     -0.15
+    ],
+    "max": [
+     0.05,
+     0.015,
+     0.15
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "pane",
+   "name": "PANE",
+   "family": "fun",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 1,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.2,
+     -0.009
+    ],
+    "max": [
+     0.05,
+     0.2,
+     0.009
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "vase",
+   "name": "VASE",
+   "family": "fun",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.45,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.075,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.125,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "tonebars",
+   "name": "TONEBARS",
+   "family": "fun",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 1.2,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.05,
+     0.058,
+     0.15
+    ]
+   },
+   "ports": [],
+   "props": {
+    "degree": {
+     "label": "Scale degree",
+     "type": "int",
+     "def": 0,
+     "min": 0,
+     "max": 14
+    },
+    "wood": {
+     "label": "Wooden bar",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "ding",
+   "name": "DING",
+   "family": "fun",
+   "ship": "M3",
+   "kind": "dynamic",
+   "mass": 0.45,
+   "bounds": {
+    "min": [
+     -0.05,
+     -0.035,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.065,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {
+    "degree": {
+     "label": "Scale degree",
+     "type": "int",
+     "def": 0,
+     "min": 0,
+     "max": 14
+    }
+   }
+  },
+  {
+   "type": "fabricator",
+   "name": "FABRICATOR",
+   "family": "future",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 9,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.3,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "spawn",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "part": {
+     "label": "Part",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "BOING",
+      "STITCH",
+      "FUZZ",
+      "THUD",
+      "PIG IRON",
+      "GLINT",
+      "BEARING",
+      "PIN",
+      "STACKER",
+      "TOPPLE TILE",
+      "WRECKER"
+     ]
+    },
+    "count": {
+     "label": "Count",
+     "type": "int",
+     "def": 5,
+     "min": 1,
+     "max": 20
+    },
+    "interval": {
+     "label": "Every (0 = on Signal)",
+     "type": "seconds",
+     "def": 0,
+     "min": 0,
+     "max": 10,
+     "step": 0.5
+    },
+    "speed": {
+     "label": "Launch speed (m/s)",
+     "type": "float",
+     "def": 1,
+     "min": 0,
+     "max": 3,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "recycler",
+   "name": "RECYCLER",
+   "family": "future",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 6,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.2,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "count",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "target": {
+     "label": "Goal",
+     "type": "int",
+     "def": 3,
+     "min": 1,
+     "max": 99
+    },
+    "mode": {
+     "label": "Signal",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "At goal",
+      "Every goal"
+     ]
+    }
+   }
+  },
+  {
+   "type": "zone",
+   "name": "ZONE",
+   "family": "future",
+   "ship": "M3",
+   "kind": "static",
+   "mass": 0,
+   "bounds": {
+    "min": [
+     -0.5,
+     0,
+     -0.5
+    ],
+    "max": [
+     0.5,
+     1,
+     0.5
+    ]
+   },
+   "ports": [],
+   "props": {
+    "mode": {
+     "label": "Mode",
+     "type": "enum",
+     "def": 1,
+     "values": [
+      "Gravity",
+      "Antigrav",
+      "Wind",
+      "Stasis"
+     ]
+    },
+    "width": {
+     "label": "Width",
+     "type": "metres",
+     "def": 1,
+     "min": 0.1,
+     "max": 10,
+     "step": 0.1
+    },
+    "height": {
+     "label": "Height",
+     "type": "metres",
+     "def": 1,
+     "min": 0.1,
+     "max": 10,
+     "step": 0.1
+    },
+    "depth": {
+     "label": "Depth",
+     "type": "metres",
+     "def": 1,
+     "min": 0.1,
+     "max": 10,
+     "step": 0.1
+    },
+    "strength": {
+     "label": "Strength (g, or m/s for wind)",
+     "type": "float",
+     "def": 1,
+     "min": 0,
+     "max": 15,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "grit_hopper",
+   "name": "GRIT HOPPER",
+   "family": "matter",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 4,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.4,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "open",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "capacity": {
+     "label": "Capacity (grains)",
+     "type": "float",
+     "def": 200000,
+     "min": 50000,
+     "max": 1000000,
+     "step": 50000
+    },
+    "rate": {
+     "label": "Rate (grains/s)",
+     "type": "float",
+     "def": 20000,
+     "min": 1000,
+     "max": 50000,
+     "step": 1000
+    },
+    "start": {
+     "label": "Full at start (%)",
+     "type": "percent",
+     "def": 100,
+     "min": 0,
+     "max": 100,
+     "step": 5
+    },
+    "open": {
+     "label": "Open at start",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "hourglass",
+   "name": "HOURGLASS",
+   "family": "matter",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 0.5,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.05,
+     0.2,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "signal",
+     "dir": "out"
+    }
+   ],
+   "props": {
+    "duration": {
+     "label": "Duration",
+     "type": "seconds",
+     "def": 10,
+     "min": 1,
+     "max": 120,
+     "step": 1
+    }
+   }
+  },
+  {
+   "type": "tank",
+   "name": "TANK",
+   "family": "matter",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 5,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.4,
+     0.17
+    ]
+   },
+   "ports": [
+    {
+     "name": "open",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "flow": {
+     "label": "Flow (L/s)",
+     "type": "float",
+     "def": 0.5,
+     "min": 0.1,
+     "max": 2,
+     "step": 0.1
+    },
+    "start": {
+     "label": "Full at start (%)",
+     "type": "percent",
+     "def": 100,
+     "min": 0,
+     "max": 100,
+     "step": 5
+    },
+    "open": {
+     "label": "Open at start",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "sprinkle_can",
+   "name": "SPRINKLE CAN",
+   "family": "matter",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 0.8,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.165,
+     0.2,
+     0.1
+    ]
+   },
+   "ports": [],
+   "props": {
+    "start": {
+     "label": "Full at start (%)",
+     "type": "percent",
+     "def": 100,
+     "min": 0,
+     "max": 100,
+     "step": 5
+    }
+   }
+  },
+  {
+   "type": "waterwheel",
+   "name": "WATERWHEEL",
+   "family": "matter",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 2.5,
+   "bounds": {
+    "min": [
+     -0.2,
+     -0.2,
+     -0.1
+    ],
+    "max": [
+     0.2,
+     0.2,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "axle",
+     "ch": "spin",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "sponge",
+   "name": "SPONGE",
+   "family": "matter",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 0.05,
+   "bounds": {
+    "min": [
+     -0.1,
+     -0.05,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.05,
+     0.05
+    ]
+   },
+   "ports": [],
+   "props": {
+    "start": {
+     "label": "Soaked at start (%)",
+     "type": "percent",
+     "def": 0,
+     "min": 0,
+     "max": 100,
+     "step": 5
+    }
+   }
+  },
+  {
+   "type": "marble_hopper",
+   "name": "MARBLE HOPPER",
+   "family": "matter",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 6,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.4,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "open",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "capacity": {
+     "label": "Capacity (marbles)",
+     "type": "float",
+     "def": 2000,
+     "min": 100,
+     "max": 100000,
+     "step": 100
+    },
+    "rate": {
+     "label": "Rate (marbles/s)",
+     "type": "float",
+     "def": 400,
+     "min": 10,
+     "max": 1000,
+     "step": 10
+    },
+    "start": {
+     "label": "Full at start (%)",
+     "type": "percent",
+     "def": 100,
+     "min": 0,
+     "max": 100,
+     "step": 5
+    },
+    "open": {
+     "label": "Open at start",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "blowout",
+   "name": "BLOWOUT",
+   "family": "air",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 0.9,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "vac",
+   "name": "VAC",
+   "family": "air",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 1.1,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "inflator",
+   "name": "INFLATOR",
+   "family": "air",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 2.4,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.3,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "fill",
+     "ch": "air",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "arc_tower",
+   "name": "ARC TOWER",
+   "family": "power",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 6,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.5,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "toast_cannon",
+   "name": "TOAST CANNON",
+   "family": "contraptions",
+   "ship": "M4",
+   "kind": "static",
+   "mass": 1.5,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.184,
+     0.07
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "toast": {
+     "label": "Toast time (browning dial)",
+     "type": "seconds",
+     "def": 3,
+     "min": 1,
+     "max": 5,
+     "step": 0.5
+    }
+   }
+  },
+  {
+   "type": "yolk",
+   "name": "YOLK",
+   "family": "rollers",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 0.055,
+   "bounds": {
+    "min": [
+     -0.0225,
+     -0.032,
+     -0.0225
+    ],
+    "max": [
+     0.0225,
+     0.028,
+     0.0225
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "zippy",
+   "name": "ZIPPY",
+   "family": "fun",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 0.8,
+   "bounds": {
+    "min": [
+     -0.1,
+     -0.035,
+     -0.05
+    ],
+    "max": [
+     0.1,
+     0.065,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "go",
+     "ch": "signal",
+     "dir": "in"
+    },
+    {
+     "name": "tow",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {
+    "speed": {
+     "label": "Top speed (m/s)",
+     "type": "float",
+     "def": 1,
+     "min": 0.2,
+     "max": 3,
+     "step": 0.1
+    },
+    "bump": {
+     "label": "On a bump",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Stop",
+      "Reverse",
+      "Ignore"
+     ]
+    },
+    "start": {
+     "label": "Drive at start",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "quack",
+   "name": "QUACK",
+   "family": "fun",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 0.04,
+   "bounds": {
+    "min": [
+     -0.041,
+     -0.028,
+     -0.05
+    ],
+    "max": [
+     0.041,
+     0.065,
+     0.064
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "rift_gate",
+   "name": "RIFT GATES",
+   "family": "future",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 4.5,
+   "bounds": {
+    "min": [
+     -0.195,
+     0,
+     -0.025
+    ],
+    "max": [
+     0.195,
+     0.4,
+     0.025
+    ]
+   },
+   "ports": [],
+   "props": {
+    "pair": {
+     "label": "Pair colour",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Plasma",
+      "Beam",
+      "Amber",
+      "Volt",
+      "Cobalt",
+      "Ignition"
+     ]
+    }
+   }
+  },
+  {
+   "type": "grav_well",
+   "name": "GRAV WELL",
+   "family": "future",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 3,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.18,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "mode": {
+     "label": "Mode",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Attract",
+      "Repel"
+     ]
+    }
+   }
+  },
+  {
+   "type": "tractor_beam",
+   "name": "TRACTOR BEAM",
+   "family": "future",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 2,
+   "bounds": {
+    "min": [
+     -0.05,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.05,
+     0.1,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "mode": {
+     "label": "Mode",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Pull",
+      "Hold"
+     ]
+    },
+    "range": {
+     "label": "Range",
+     "type": "metres",
+     "def": 1.5,
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1
+    },
+    "hold": {
+     "label": "Hold distance",
+     "type": "metres",
+     "def": 0.5,
+     "min": 0.5,
+     "max": 3,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "hover_pad",
+   "name": "HOVER PAD",
+   "family": "future",
+   "ship": "M5",
+   "kind": "dynamic",
+   "mass": 2.5,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.05,
+     0.15
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "force_wall",
+   "name": "FORCE WALL",
+   "family": "future",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 1.2,
+   "bounds": {
+    "min": [
+     -0.3,
+     0,
+     -0.025
+    ],
+    "max": [
+     0.3,
+     0.4,
+     0.025
+    ]
+   },
+   "ports": [
+    {
+     "name": "toggle",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "width": {
+     "label": "Width",
+     "type": "metres",
+     "def": 0.6,
+     "min": 0.1,
+     "max": 1,
+     "step": 0.1
+    },
+    "height": {
+     "label": "Height",
+     "type": "metres",
+     "def": 0.4,
+     "min": 0.1,
+     "max": 1,
+     "step": 0.1
+    },
+    "start": {
+     "label": "On at start",
+     "type": "bool",
+     "def": 1
+    }
+   }
+  },
+  {
+   "type": "coilgun_ring",
+   "name": "COILGUN RING",
+   "family": "future",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 4,
+   "bounds": {
+    "min": [
+     -0.1425,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.1425,
+     0.3,
+     0.05
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "direction": {
+     "label": "Boost direction",
+     "type": "enum",
+     "def": 0,
+     "values": [
+      "Forward",
+      "Back"
+     ]
+    }
+   }
+  },
+  {
+   "type": "stasis_field",
+   "name": "STASIS FIELD",
+   "family": "future",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 1.6,
+   "bounds": {
+    "min": [
+     -0.25,
+     0,
+     -0.25
+    ],
+    "max": [
+     0.25,
+     0.5,
+     0.25
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "width": {
+     "label": "Width",
+     "type": "metres",
+     "def": 0.5,
+     "min": 0.1,
+     "max": 1,
+     "step": 0.1
+    },
+    "height": {
+     "label": "Height",
+     "type": "metres",
+     "def": 0.5,
+     "min": 0.1,
+     "max": 1,
+     "step": 0.1
+    },
+    "depth": {
+     "label": "Depth",
+     "type": "metres",
+     "def": 0.5,
+     "min": 0.1,
+     "max": 1,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "buzz_beacon",
+   "name": "BUZZ BEACON",
+   "family": "future",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 0.4,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.04,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "call",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "pair": {
+     "label": "Pair colour",
+     "type": "enum",
+     "def": 5,
+     "values": [
+      "Plasma",
+      "Beam",
+      "Amber",
+      "Volt",
+      "Cobalt",
+      "Ignition"
+     ]
+    }
+   }
+  },
+  {
+   "type": "singularity",
+   "name": "SINGULARITY",
+   "family": "boom",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 7,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.2,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "arm",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "grabber",
+   "name": "GRABBER",
+   "family": "drive",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 3.5,
+   "bounds": {
+    "min": [
+     -0.1,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.1,
+     0.5,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "in",
+     "ch": "power",
+     "dir": "in"
+    },
+    {
+     "name": "go",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "aYaw": {
+     "label": "Zone A direction",
+     "type": "angle",
+     "def": -60,
+     "min": -180,
+     "max": 180,
+     "step": 15
+    },
+    "aReach": {
+     "label": "Zone A reach",
+     "type": "metres",
+     "def": 0.25,
+     "min": 0.12,
+     "max": 0.3,
+     "step": 0.01
+    },
+    "aHeight": {
+     "label": "Zone A height",
+     "type": "metres",
+     "def": 0,
+     "min": 0,
+     "max": 0.2,
+     "step": 0.01
+    },
+    "bYaw": {
+     "label": "Zone B direction",
+     "type": "angle",
+     "def": 60,
+     "min": -180,
+     "max": 180,
+     "step": 15
+    },
+    "bReach": {
+     "label": "Zone B reach",
+     "type": "metres",
+     "def": 0.25,
+     "min": 0.12,
+     "max": 0.3,
+     "step": 0.01
+    },
+    "bHeight": {
+     "label": "Zone B height",
+     "type": "metres",
+     "def": 0,
+     "min": 0,
+     "max": 0.2,
+     "step": 0.01
+    },
+    "grip": {
+     "label": "Grip width",
+     "type": "metres",
+     "def": 0.06,
+     "min": 0.02,
+     "max": 0.08,
+     "step": 0.01
+    },
+    "loop": {
+     "label": "Repeat while powered",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "goo_vat",
+   "name": "GOO VAT",
+   "family": "matter",
+   "ship": "M5",
+   "kind": "static",
+   "mass": 6,
+   "bounds": {
+    "min": [
+     -0.141,
+     0,
+     -0.147
+    ],
+    "max": [
+     0.141,
+     0.3,
+     0.155
+    ]
+   },
+   "ports": [
+    {
+     "name": "open",
+     "ch": "signal",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "flow": {
+     "label": "Flow (L/s)",
+     "type": "float",
+     "def": 0.3,
+     "min": 0.1,
+     "max": 1,
+     "step": 0.1
+    },
+    "start": {
+     "label": "Full at start (%)",
+     "type": "percent",
+     "def": 100,
+     "min": 0,
+     "max": 100,
+     "step": 5
+    },
+    "open": {
+     "label": "Open at start",
+     "type": "bool",
+     "def": 0
+    }
+   }
+  },
+  {
+   "type": "hamster_drive",
+   "name": "HAMSTER DRIVE",
+   "family": "drive",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 3.2,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.15,
+     0.3,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "spin",
+     "dir": "out"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "pedal_rig",
+   "name": "PEDAL RIG",
+   "family": "drive",
+   "ship": "M2",
+   "kind": "static",
+   "mass": 5,
+   "bounds": {
+    "min": [
+     -0.2,
+     0,
+     -0.1
+    ],
+    "max": [
+     0.2,
+     0.4,
+     0.1
+    ]
+   },
+   "ports": [
+    {
+     "name": "out",
+     "ch": "spin",
+     "dir": "out"
+    },
+    {
+     "name": "bait",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "fishbowl",
+   "name": "FISHBOWL",
+   "family": "contraptions",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 15,
+   "bounds": {
+    "min": [
+     -0.15,
+     0,
+     -0.15
+    ],
+    "max": [
+     0.15,
+     0.3,
+     0.15
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "trap_box",
+   "name": "TRAP BOX",
+   "family": "frame",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 5.2,
+   "bounds": {
+    "min": [
+     -0.35,
+     0,
+     -0.25
+    ],
+    "max": [
+     0.35,
+     0.5,
+     0.25
+    ]
+   },
+   "ports": [
+    {
+     "name": "hook",
+     "ch": "tension",
+     "dir": "both"
+    }
+   ],
+   "props": {}
+  },
+  {
+   "type": "mochi",
+   "name": "MOCHI",
+   "family": "critters",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 4,
+   "bounds": {
+    "min": [
+     -0.08,
+     0,
+     -0.22
+    ],
+    "max": [
+     0.08,
+     0.37,
+     0.26
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "pip",
+   "name": "PIP",
+   "family": "critters",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 0.12,
+   "bounds": {
+    "min": [
+     -0.038,
+     0,
+     -0.065
+    ],
+    "max": [
+     0.038,
+     0.085,
+     0.065
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "goby",
+   "name": "GOBY",
+   "family": "critters",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 0.03,
+   "bounds": {
+    "min": [
+     -0.015,
+     0,
+     -0.05
+    ],
+    "max": [
+     0.015,
+     0.055,
+     0.045
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "bandit",
+   "name": "BANDIT",
+   "family": "critters",
+   "ship": "M2",
+   "kind": "dynamic",
+   "mass": 5.5,
+   "bounds": {
+    "min": [
+     -0.09,
+     0,
+     -0.45
+    ],
+    "max": [
+     0.09,
+     0.3,
+     0.26
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "biscuit",
+   "name": "BISCUIT",
+   "family": "critters",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 12,
+   "bounds": {
+    "min": [
+     -0.11,
+     0,
+     -0.28
+    ],
+    "max": [
+     0.11,
+     0.41,
+     0.36
+    ]
+   },
+   "ports": [],
+   "props": {}
+  },
+  {
+   "type": "henny",
+   "name": "HENNY",
+   "family": "critters",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 1.6,
+   "bounds": {
+    "min": [
+     -0.09,
+     0,
+     -0.2
+    ],
+    "max": [
+     0.09,
+     0.32,
+     0.16
+    ]
+   },
+   "ports": [],
+   "props": {
+    "eggs": {
+     "label": "Eggs per run",
+     "type": "int",
+     "def": 3,
+     "min": 0,
+     "max": 6
+    }
+   }
+  },
+  {
+   "type": "dusty",
+   "name": "DUSTY",
+   "family": "critters",
+   "ship": "M4",
+   "kind": "dynamic",
+   "mass": 3.2,
+   "bounds": {
+    "min": [
+     -0.183,
+     0,
+     -0.183
+    ],
+    "max": [
+     0.183,
+     0.07,
+     0.183
+    ]
+   },
+   "ports": [
+    {
+     "name": "charge",
+     "ch": "power",
+     "dir": "in"
+    }
+   ],
+   "props": {
+    "zone_w": {
+     "label": "Zone width",
+     "type": "metres",
+     "def": 2,
+     "min": 0.4,
+     "max": 8,
+     "step": 0.1
+    },
+    "zone_d": {
+     "label": "Zone depth",
+     "type": "metres",
+     "def": 2,
+     "min": 0.4,
+     "max": 8,
+     "step": 0.1
+    },
+    "zone_x": {
+     "label": "Zone offset X",
+     "type": "metres",
+     "def": 0,
+     "min": -4,
+     "max": 4,
+     "step": 0.1
+    },
+    "zone_z": {
+     "label": "Zone offset Z",
+     "type": "metres",
+     "def": 0,
+     "min": -4,
+     "max": 4,
+     "step": 0.1
+    }
+   }
+  },
+  {
+   "type": "buzz",
+   "name": "BUZZ",
+   "family": "critters",
+   "ship": "M5",
+   "kind": "dynamic",
+   "mass": 1.1,
+   "bounds": {
+    "min": [
+     -0.17,
+     0,
+     -0.17
+    ],
+    "max": [
+     0.17,
+     0.145,
+     0.17
+    ]
+   },
+   "ports": [],
+   "props": {
+    "pair": {
+     "label": "Pair colour",
+     "type": "enum",
+     "def": 5,
+     "values": [
+      "Plasma",
+      "Beam",
+      "Amber",
+      "Volt",
+      "Cobalt",
+      "Ignition"
+     ]
+    }
+   }
+  }
+ ],
+ "demos": {
+  "thud": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0.15,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "plank",
+     "pos": [
+      -0.65,
+      0.5,
+      0
+     ],
+     "rot": [
+      0,
+      90,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "boing": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "boing",
+     "pos": [
+      0,
+      1,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "stitch": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      0.1,
+      0.8,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "helio": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "helio",
+     "pos": [
+      0,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "cog",
+     "pos": [
+      0,
+      1.2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    }
+   ],
+   "links": []
+  },
+  "brik": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "brik",
+     "pos": [
+      -0.3,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "brik",
+     "pos": [
+      -0.1,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "brik",
+     "pos": [
+      0.1,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "brik",
+     "pos": [
+      0.3,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "brik",
+     "pos": [
+      -0.2,
+      0.15,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "brik",
+     "pos": [
+      0,
+      0.15,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "brik",
+     "pos": [
+      0.2,
+      0.15,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "brik",
+     "pos": [
+      -0.3,
+      0.25,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "brik",
+     "pos": [
+      -0.1,
+      0.25,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 10,
+     "type": "brik",
+     "pos": [
+      0.1,
+      0.25,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 11,
+     "type": "brik",
+     "pos": [
+      0.3,
+      0.25,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 12,
+     "type": "bangstick",
+     "pos": [
+      -0.1,
+      0.0391,
+      0.35
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       5
+      ]
+     ]
+    },
+    {
+     "id": 13,
+     "type": "wick",
+     "pos": [
+      0.2,
+      0,
+      0.45
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "fuse",
+     "from": {
+      "part": 13,
+      "port": "flame"
+     },
+     "to": {
+      "part": 12,
+      "port": "fuse"
+     },
+     "points": []
+    }
+   ]
+  },
+  "plank": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "ledge",
+     "pos": [
+      -0.4,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "ledge",
+     "pos": [
+      0.4,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "plank",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      0,
+      2.5,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "slope": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       6
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "boing",
+     "pos": [
+      0.05,
+      0.4094,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "ledge": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "ledge",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0,
+      0.5703,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      0.1203,
+      1.2,
+      0.1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "fulcrum": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "fulcrum",
+     "pos": [
+      0,
+      0.0656,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "boing",
+     "pos": [
+      -0.2406,
+      0.2297,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      0.2406,
+      0.9,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "anchor": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "anchor",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "helio",
+     "pos": [
+      0,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 2,
+      "port": "knot"
+     },
+     "to": {
+      "part": 1,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "sheave": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "fulcrum",
+     "pos": [
+      0,
+      0.0656,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "sheave",
+     "pos": [
+      -0.2797,
+      0.8,
+      0.0266
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "helio",
+     "pos": [
+      0.15,
+      1.1,
+      0.0437
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 1,
+      "port": "end_l"
+     },
+     "to": {
+      "part": 2,
+      "port": "axle"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 3,
+      "port": "knot"
+     },
+     "to": {
+      "part": 2,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "treadway": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.9,
+      0,
+      0.35
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.5,
+      0,
+      0.35
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "treadway",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "brik",
+     "pos": [
+      -0.2,
+      0.15,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "drive_l"
+     },
+     "points": []
+    }
+   ]
+  },
+  "cog": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.8,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "cog",
+     "pos": [
+      0.1,
+      0.35,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "cog",
+     "pos": [
+      0.25,
+      0.35,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 5,
+     "type": "cog",
+     "pos": [
+      -0.1,
+      0.35,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "motor": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "cog",
+     "pos": [
+      0.5,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "gale": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "gale",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      0,
+      0.1203,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "wick",
+     "pos": [
+      0,
+      0,
+      1.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "mains": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "gale",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      0,
+      0.1203,
+      0.5
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "the_button",
+     "pos": [
+      -0.9,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "thud",
+     "pos": [
+      -0.9,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "stomp_pad": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "stomp_pad",
+     "pos": [
+      -0.15,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       40
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "stomp_pad",
+     "pos": [
+      0.15,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       40
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      -0.15,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      0.15,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "bangstick",
+     "pos": [
+      0.15,
+      0.0391,
+      0.8
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "detonator"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "the_button": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "bangstick",
+     "pos": [
+      0.6,
+      0.0391,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "brik",
+     "pos": [
+      0.95,
+      0.05,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "brik",
+     "pos": [
+      0.95,
+      0.15,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "wick": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "anchor",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "anchor",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "helio",
+     "pos": [
+      0,
+      0.7719,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "wick",
+     "pos": [
+      -0.2797,
+      0,
+      0.0234
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 3,
+      "port": "knot"
+     },
+     "to": {
+      "part": 1,
+      "port": "hook"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 3,
+      "port": "knot"
+     },
+     "to": {
+      "part": 2,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "bangstick": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "wick",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "bangstick",
+     "pos": [
+      -0.1406,
+      0.0391,
+      0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       5
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "bangstick",
+     "pos": [
+      -0.1406,
+      0.0391,
+      0.7
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "brik",
+     "pos": [
+      -0.3,
+      0.05,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "brik",
+     "pos": [
+      -0.1,
+      0.05,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "brik",
+     "pos": [
+      0.1,
+      0.05,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "brik",
+     "pos": [
+      -0.2,
+      0.15,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "brik",
+     "pos": [
+      0,
+      0.15,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "brik",
+     "pos": [
+      0.2,
+      0.15,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "fuse",
+     "from": {
+      "part": 1,
+      "port": "flame"
+     },
+     "to": {
+      "part": 2,
+      "port": "fuse"
+     },
+     "points": []
+    }
+   ]
+  },
+  "snipper": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "snipper",
+     "pos": [
+      0.3,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "anchor",
+     "pos": [
+      0.4,
+      0.0359,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "helio",
+     "pos": [
+      0.4,
+      0.7,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "the_button",
+     "pos": [
+      -0.3,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "thud",
+     "pos": [
+      -0.3,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 3,
+      "port": "knot"
+     },
+     "to": {
+      "part": 2,
+      "port": "hook"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "close"
+     },
+     "points": []
+    }
+   ]
+  },
+  "topple_tile": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0.15,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "topple_tile",
+     "pos": [
+      -0.5,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "topple_tile",
+     "pos": [
+      -0.6,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "topple_tile",
+     "pos": [
+      -0.7,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "topple_tile",
+     "pos": [
+      -0.8,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "topple_tile",
+     "pos": [
+      -0.9,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "topple_tile",
+     "pos": [
+      -1,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "topple_tile",
+     "pos": [
+      -1.1,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 10,
+     "type": "topple_tile",
+     "pos": [
+      -1.2,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 11,
+     "type": "topple_tile",
+     "pos": [
+      -1.3,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 12,
+     "type": "topple_tile",
+     "pos": [
+      -1.4,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "line": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "fulcrum",
+     "pos": [
+      0,
+      0.0656,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "helio",
+     "pos": [
+      -0.2797,
+      0.6,
+      0.0437
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 2,
+      "port": "knot"
+     },
+     "to": {
+      "part": 1,
+      "port": "end_l"
+     },
+     "points": []
+    }
+   ]
+  },
+  "band": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.8,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "cog",
+     "pos": [
+      0.5,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "fuse": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "wick",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "bangstick",
+     "pos": [
+      -0.1406,
+      0.0391,
+      0.3297
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       5
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "brik",
+     "pos": [
+      0.3,
+      0.05,
+      0.3297
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "brik",
+     "pos": [
+      0.3,
+      0.15,
+      0.3297
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "fuse",
+     "from": {
+      "part": 1,
+      "port": "flame"
+     },
+     "to": {
+      "part": 2,
+      "port": "fuse"
+     },
+     "points": []
+    }
+   ]
+  },
+  "cable_signal": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "stomp_pad",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "bangstick",
+     "pos": [
+      -0.9,
+      0.0391,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "bangstick",
+     "pos": [
+      0.9,
+      0.0391,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "detonator"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "cable_power": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "cog",
+     "pos": [
+      1,
+      0.35,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "gale",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "boing",
+     "pos": [
+      -0.5,
+      0.1203,
+      0.5
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "fuzz": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       6
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "fuzz",
+     "pos": [
+      0.1203,
+      0.45,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "pig_iron": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "pig_iron",
+     "pos": [
+      0.15,
+      0.3594,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "plank",
+     "pos": [
+      -0.65,
+      0.5,
+      0
+     ],
+     "rot": [
+      0,
+      90,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "vortex": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "vortex",
+     "pos": [
+      0,
+      0.45,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      0.2406,
+      1.2,
+      0.0797
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "sprong": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "sprong",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "boing",
+     "pos": [
+      0,
+      1,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "scoop": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "scoop",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "helio",
+     "pos": [
+      0,
+      0.6203,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 2,
+      "port": "knot"
+     },
+     "to": {
+      "part": 1,
+      "port": "bail"
+     },
+     "points": []
+    }
+   ]
+  },
+  "flap": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "flap",
+     "pos": [
+      0,
+      0.5,
+      -0.1297
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      -0.05,
+      0.5516,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "stitch",
+     "pos": [
+      0.05,
+      0.5516,
+      0.0297
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "the_button",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "thud",
+     "pos": [
+      -0.5,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "dynamo": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.9,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "dynamo",
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "lamp",
+     "pos": [
+      0.45,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "turbine": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      -0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "ledge",
+     "pos": [
+      0,
+      0.0797,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "gale",
+     "pos": [
+      0,
+      0.1297,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "turbine",
+     "pos": [
+      0,
+      0,
+      0.7
+     ],
+     "rot": [
+      180,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "puffer": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "puffer",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.0297,
+      0.55,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "wick",
+     "pos": [
+      0.6,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "cell": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "cell",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "lamp",
+     "pos": [
+      0.3,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "motor",
+     "pos": [
+      -0.35,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "suncell": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "suncell",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "torch",
+     "pos": [
+      -0.0344,
+      0.5,
+      0
+     ],
+     "rot": [
+      0,
+      0,
+      -90
+     ],
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "motor",
+     "pos": [
+      0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "cog",
+     "pos": [
+      0.95,
+      0.35,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "lamp": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "lamp",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "suncell",
+     "pos": [
+      0,
+      0,
+      0.25
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "gale",
+     "pos": [
+      0.5,
+      0,
+      0.25
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "boing",
+     "pos": [
+      0.5,
+      0.1203,
+      0.8
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "torch": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.5,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "torch",
+     "pos": [
+      -0.0344,
+      0.5,
+      0
+     ],
+     "rot": [
+      0,
+      0,
+      -90
+     ],
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "suncell",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "lamp",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "burning_glass": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "burning_glass",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "torch",
+     "pos": [
+      0,
+      0.1906,
+      -0.3
+     ],
+     "rot": [
+      -90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "the_button",
+     "pos": [
+      -0.5,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      -0.5,
+      0.4,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "anchor",
+     "pos": [
+      0,
+      0,
+      0.425
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "helio",
+     "pos": [
+      0,
+      0.2453,
+      0.425
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 6,
+      "port": "knot"
+     },
+     "to": {
+      "part": 5,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "toggle": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "toggle",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "gale",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      -0.0594,
+      0.5,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "boing",
+     "pos": [
+      0.4,
+      0.1203,
+      0.5
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 2,
+      "port": "out_power"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "ringer": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "ringer",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "bangstick",
+     "pos": [
+      0.6,
+      0.0391,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "delay": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "delay",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       10
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "bangstick",
+     "pos": [
+      0.6,
+      0.0391,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "t_plunger": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "t_plunger",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0,
+      0.65,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "bangstick",
+     "pos": [
+      -0.8,
+      0.0391,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "bangstick",
+     "pos": [
+      0.8,
+      0.0391,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "detonator"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "skyrocket": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "wick",
+     "pos": [
+      0.1203,
+      0,
+      0.0297
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "skyrocket",
+     "pos": [
+      0,
+      0.1203,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "fuse",
+     "from": {
+      "part": 1,
+      "port": "flame"
+     },
+     "to": {
+      "part": 2,
+      "port": "fuse"
+     },
+     "points": []
+    }
+   ]
+  },
+  "big_top": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "big_top",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "boing",
+     "pos": [
+      0.1219,
+      0.2156,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "wick",
+     "pos": [
+      -0.2,
+      0,
+      0.3594
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "fuse",
+     "from": {
+      "part": 3,
+      "port": "flame"
+     },
+     "to": {
+      "part": 1,
+      "port": "fuse"
+     },
+     "points": []
+    }
+   ]
+  },
+  "cork_blaster": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "ledge",
+     "pos": [
+      0,
+      0.25,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "cork_blaster",
+     "pos": [
+      0,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "the_button",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      -0.5,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "anchor",
+     "pos": [
+      0.8,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "helio",
+     "pos": [
+      0.8,
+      0.3594,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "fire"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 6,
+      "port": "knot"
+     },
+     "to": {
+      "part": 5,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "punchline": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "punchline",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "the_button",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      -0.5,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "boing",
+     "pos": [
+      0.4203,
+      0.1203,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "trigger"
+     },
+     "points": []
+    }
+   ]
+  },
+  "gotcha_box": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.8,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "gotcha_box",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "plank",
+     "pos": [
+      0,
+      0.5,
+      0.2156
+     ],
+     "rot": [
+      0,
+      90,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "crank"
+     },
+     "points": []
+    }
+   ]
+  },
+  "gutter": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "stitch",
+     "pos": [
+      -0.6,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "gutter",
+     "from": null,
+     "to": null,
+     "points": [
+      [
+       -0.7,
+       0.5,
+       0
+      ],
+      [
+       0.4,
+       0.25,
+       0
+      ],
+      [
+       0.8,
+       0.2,
+       0.3
+      ]
+     ]
+    }
+   ]
+  },
+  "glint": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "glint",
+     "pos": [
+      0.2,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "bearing": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "bearing",
+     "pos": [
+      0.2,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "bearing",
+     "pos": [
+      -0.5,
+      0.0078,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "glidepath": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 2,
+     "type": "bearing",
+     "pos": [
+      -0.6,
+      0.6156,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "glidepath",
+     "from": null,
+     "to": null,
+     "points": [
+      [
+       -0.6,
+       0.6,
+       0
+      ],
+      [
+       -0.2,
+       0.35,
+       0
+      ],
+      [
+       0.2,
+       0.25,
+       0.2
+      ],
+      [
+       0.5,
+       0.3,
+       0.3
+      ]
+     ]
+    }
+   ]
+  },
+  "glidepath_booster": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.9,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.5,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "glidepath_booster",
+     "pos": [
+      0.1,
+      0.3047,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "bearing",
+     "pos": [
+      -0.5984,
+      0.3656,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "glidepath",
+     "from": null,
+     "to": null,
+     "points": [
+      [
+       -0.6,
+       0.359,
+       0
+      ],
+      [
+       -0.3,
+       0.309,
+       0
+      ],
+      [
+       0.6,
+       0.3,
+       0
+      ]
+     ]
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "drive"
+     },
+     "points": []
+    }
+   ]
+  },
+  "spindeck": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.8,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "spindeck",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      0.15,
+      0.1406,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "lift": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.6,
+      0,
+      -0.5
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "lift",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       10
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      0,
+      0.1703,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "the_button",
+     "pos": [
+      0.5,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "thud",
+     "pos": [
+      0.5,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "call"
+     },
+     "points": []
+    }
+   ]
+  },
+  "rack": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.6,
+      0,
+      -0.5
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "motor",
+     "pos": [
+      -0.3,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "rack",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       6
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "topple_tile",
+     "pos": [
+      0.3297,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "topple_tile",
+     "pos": [
+      0.4297,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "topple_tile",
+     "pos": [
+      0.5297,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "topple_tile",
+     "pos": [
+      0.6297,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "topple_tile",
+     "pos": [
+      0.7297,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "pinion"
+     },
+     "points": []
+    }
+   ]
+  },
+  "ram": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "ram",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      0,
+      0.1203,
+      0.3797
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "fire"
+     },
+     "points": []
+    }
+   ]
+  },
+  "lance": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.6,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "lance",
+     "pos": [
+      -0.4,
+      0.5,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "ledge",
+     "pos": [
+      -0.4,
+      0.45,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "burning_glass",
+     "pos": [
+      -0.1,
+      0.3016,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "anchor",
+     "pos": [
+      0.1203,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "helio",
+     "pos": [
+      0.1203,
+      0.9,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 6,
+      "port": "knot"
+     },
+     "to": {
+      "part": 5,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "mirror": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.8,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "lance",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "mirror",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": [
+      -45,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "suncell",
+     "pos": [
+      0,
+      0.0469,
+      0.5
+     ],
+     "rot": [
+      0,
+      -90,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "motor",
+     "pos": [
+      0.5,
+      0,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "splitter": {
+   "ticks": 120,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.8,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "lance",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "splitter",
+     "pos": [
+      -0.1,
+      -0.0187,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "tripwire",
+     "pos": [
+      0.85,
+      -0.0031,
+      -0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 5,
+     "type": "tripwire",
+     "pos": [
+      0.85,
+      -0.0031,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 6,
+     "type": "tripwire",
+     "pos": [
+      0.85,
+      -0.0031,
+      0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "tripwire": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -1,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "lance",
+     "pos": [
+      -0.6,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "tripwire",
+     "pos": [
+      0.1547,
+      -0.0031,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "slope",
+     "pos": [
+      -0.1,
+      0,
+      0.15
+     ],
+     "rot": [
+      -90,
+      0,
+      0
+     ],
+     "flags": 0,
+     "props": [
+      [
+       0,
+       3
+      ]
+     ]
+    },
+    {
+     "id": 5,
+     "type": "stitch",
+     "pos": [
+      -0.1,
+      0.2703,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "bangstick",
+     "pos": [
+      0.6,
+      0.0391,
+      0.5
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 6,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "ping": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.6,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.6,
+      0.2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "ping",
+     "pos": [
+      -0.3,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       0
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "ping",
+     "pos": [
+      0.4,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 5,
+     "type": "ping",
+     "pos": [
+      0.4,
+      0,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ],
+      [
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 6,
+     "type": "bangstick",
+     "pos": [
+      0.8,
+      0.0391,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "bangstick",
+     "pos": [
+      0.8,
+      0.0391,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 6,
+      "port": "detonator"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 5,
+      "port": "out"
+     },
+     "to": {
+      "part": 7,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "maglock": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "maglock",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "pig_iron",
+     "pos": [
+      0,
+      0.0594,
+      0.25
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "bearing",
+     "pos": [
+      0.0594,
+      0.0078,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "stitch",
+     "pos": [
+      -0.0594,
+      0.0375,
+      0.25
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "powder_keg": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "powder_keg",
+     "pos": [
+      0,
+      0.15,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "wick",
+     "pos": [
+      0.15,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.05,
+      -0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.05,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.05,
+      0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.15,
+      -0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.15,
+      0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.15,
+      0.3
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.25,
+      -0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 10,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.25,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 11,
+     "type": "brik",
+     "pos": [
+      0.7,
+      0.25,
+      0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "jitterjuice": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.6,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.6,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "cork_blaster",
+     "pos": [
+      -0.5,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "jitterjuice",
+     "pos": [
+      0.1,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "fire"
+     },
+     "points": []
+    }
+   ]
+  },
+  "skyshow": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "wick",
+     "pos": [
+      0,
+      0,
+      0.2203
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "skyshow",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "fuse",
+     "from": {
+      "part": 1,
+      "port": "flame"
+     },
+     "to": {
+      "part": 2,
+      "port": "fuse"
+     },
+     "points": []
+    }
+   ]
+  },
+  "flamer": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.5,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.5,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "ledge",
+     "pos": [
+      0,
+      0.0906,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "flamer",
+     "pos": [
+      0,
+      0.1406,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "anchor",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "helio",
+     "pos": [
+      0.4,
+      0.3297,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "wick",
+     "pos": [
+      0.6,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "on"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 6,
+      "port": "knot"
+     },
+     "to": {
+      "part": 5,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "popper": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "popper",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 32
+    },
+    {
+     "id": 2,
+     "type": "helio",
+     "pos": [
+      0,
+      0.6,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "fuzz",
+     "pos": [
+      0,
+      0.1797,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 2,
+      "port": "knot"
+     },
+     "to": {
+      "part": 1,
+      "port": "string"
+     },
+     "points": []
+    }
+   ]
+  },
+  "snaptrap": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "snaptrap",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "glint",
+     "pos": [
+      -0.0797,
+      0.0359,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "stitch",
+     "pos": [
+      0.0406,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "bonker": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "bonker",
+     "pos": [
+      0,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "the_button",
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "bangstick",
+     "pos": [
+      0.6,
+      0.0391,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "swing"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "flinger": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "flinger",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      -0.1594,
+      0.0953,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "release"
+     },
+     "points": []
+    }
+   ]
+  },
+  "wrecker": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "anchor",
+     "pos": [
+      0,
+      1.1,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "wrecker",
+     "pos": [
+      -0.9,
+      1,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.05,
+      -0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.05,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.05,
+      0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.15,
+      -0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.15,
+      0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.15,
+      0.3
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.25,
+      -0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 10,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.25,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 11,
+     "type": "brik",
+     "pos": [
+      0.15,
+      0.25,
+      0.2
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "chain",
+     "from": {
+      "part": 2,
+      "port": "hook"
+     },
+     "to": {
+      "part": 1,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "pinger": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "pinger",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      0,
+      0.0375,
+      0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "fire"
+     },
+     "points": []
+    }
+   ]
+  },
+  "paddle": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "paddle",
+     "pos": [
+      0,
+      0.0594,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      0.1797,
+      0.0375,
+      -0.0203
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 3,
+      "port": "flip"
+     },
+     "points": []
+    }
+   ]
+  },
+  "bumper": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0.1,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       3
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      0.35,
+      0.2594,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "bumper",
+     "pos": [
+      -0.7,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "pin": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0.4,
+      0,
+      0
+     ],
+     "rot": [
+      180,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0.2594,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "pin",
+     "pos": [
+      1.05,
+      0.0547,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "pin",
+     "pos": [
+      1.1547,
+      0.0547,
+      -0.0594
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "pin",
+     "pos": [
+      1.1547,
+      0.0547,
+      0.0594
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "pin",
+     "pos": [
+      1.2578,
+      0.0547,
+      -0.1203
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "pin",
+     "pos": [
+      1.2578,
+      0.0547,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "pin",
+     "pos": [
+      1.2578,
+      0.0547,
+      0.1203
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "pin",
+     "pos": [
+      1.3625,
+      0.0547,
+      -0.1797
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 10,
+     "type": "pin",
+     "pos": [
+      1.3625,
+      0.0547,
+      -0.0594
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 11,
+     "type": "pin",
+     "pos": [
+      1.3625,
+      0.0547,
+      0.0594
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 12,
+     "type": "pin",
+     "pos": [
+      1.3625,
+      0.0547,
+      0.1797
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "stacker": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": [
+      180,
+      0,
+      0
+     ],
+     "flags": 0,
+     "props": [
+      [
+       0,
+       7
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.1,
+      0.5,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "stacker",
+     "pos": [
+      0.75,
+      0.0156,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.0156,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "stacker",
+     "pos": [
+      0.95,
+      0.0156,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.0453,
+      -0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.0453,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.0453,
+      0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "stacker",
+     "pos": [
+      0.75,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 10,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 11,
+     "type": "stacker",
+     "pos": [
+      0.95,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 12,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.1047,
+      -0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 13,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.1047,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 14,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.1047,
+      0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 15,
+     "type": "stacker",
+     "pos": [
+      0.75,
+      0.1344,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 16,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.1344,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 17,
+     "type": "stacker",
+     "pos": [
+      0.95,
+      0.1344,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 18,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.1656,
+      -0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 19,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.1656,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 20,
+     "type": "stacker",
+     "pos": [
+      0.85,
+      0.1656,
+      0.1
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "pane": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "slope",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": [
+      180,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      -0.15,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "pane",
+     "pos": [
+      0.5,
+      0.2,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "vase": {
+   "ticks": 180,
+   "parts": [
+    {
+     "id": 1,
+     "type": "vase",
+     "pos": [
+      0,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "tonebars": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "tonebars",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      0,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "tonebars",
+     "pos": [
+      0.1203,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      0.1203,
+      0.45,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "tonebars",
+     "pos": [
+      0.2406,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    },
+    {
+     "id": 6,
+     "type": "stitch",
+     "pos": [
+      0.2406,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "ding": {
+   "ticks": 180,
+   "parts": [
+    {
+     "id": 1,
+     "type": "ding",
+     "pos": [
+      0,
+      0.0344,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      0,
+      0.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "fabricator": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "fabricator",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       1
+      ],
+      [
+       3,
+       15
+      ]
+     ]
+    }
+   ],
+   "links": []
+  },
+  "recycler": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "recycler",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       3
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      -0.0406,
+      0.4,
+      -0.0203
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "stitch",
+     "pos": [
+      0,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      0.0406,
+      0.8,
+      0.0203
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "bangstick",
+     "pos": [
+      0.6,
+      0.0391,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "count"
+     },
+     "to": {
+      "part": 5,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "zone": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "zone",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       12
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       4,
+       5
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "boing",
+     "pos": [
+      0,
+      0.1203,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      0.6,
+      0.1203,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "grit_hopper": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "grit_hopper",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "open"
+     },
+     "points": []
+    }
+   ]
+  },
+  "hourglass": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "hourglass",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "bangstick",
+     "pos": [
+      0.5,
+      0.0391,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "tank": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "tank",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       10
+      ],
+      [
+       1,
+       4
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "open"
+     },
+     "points": []
+    }
+   ]
+  },
+  "sprinkle_can": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "sprinkle_can",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       10
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      -0.1,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "waterwheel": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "tank",
+     "pos": [
+      0.0594,
+      0.3797,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       10
+      ],
+      [
+       1,
+       2
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "ledge",
+     "pos": [
+      0.0594,
+      0.3297,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "waterwheel",
+     "pos": [
+      0,
+      0.2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "the_button",
+     "pos": [
+      -0.5,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "thud",
+     "pos": [
+      -0.5,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "open"
+     },
+     "points": []
+    }
+   ]
+  },
+  "sponge": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "sponge",
+     "pos": [
+      0,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       20
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0,
+      0.5,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "marble_hopper": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "marble_hopper",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       20
+      ],
+      [
+       1,
+       40
+      ],
+      [
+       2,
+       5
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "open"
+     },
+     "points": []
+    }
+   ]
+  },
+  "blowout": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "blowout",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "anchor",
+     "pos": [
+      0.6,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "helio",
+     "pos": [
+      0.6,
+      0.1797,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 4,
+      "port": "knot"
+     },
+     "to": {
+      "part": 3,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "vac": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.4,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "vac",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "fuzz",
+     "pos": [
+      0,
+      0.0328,
+      0.35
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "inflator": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "inflator",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "helio",
+     "pos": [
+      0.0797,
+      0.4562,
+      0.0141
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "the_button",
+     "pos": [
+      -0.4,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "thud",
+     "pos": [
+      -0.4,
+      3,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 5,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "arc_tower": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "arc_tower",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "pig_iron",
+     "pos": [
+      0.45,
+      0.0594,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      -0.3,
+      0.0375,
+      0.1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "anchor",
+     "pos": [
+      0.3063,
+      0,
+      0.0063
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "helio",
+     "pos": [
+      0.3063,
+      0.1953,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 6,
+      "port": "knot"
+     },
+     "to": {
+      "part": 5,
+      "port": "hook"
+     },
+     "points": []
+    }
+   ]
+  },
+  "toast_cannon": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.4,
+      0,
+      -0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "toast_cannon",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       3
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "yolk": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "yolk",
+     "pos": [
+      0,
+      2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "yolk",
+     "pos": [
+      0.3,
+      0.0313,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "zippy": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "zippy",
+     "pos": [
+      0,
+      0.0359,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       10
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "the_button",
+     "pos": [
+      -0.3,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      -0.3,
+      0.2,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "scoop",
+     "pos": [
+      -0.45,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "brik",
+     "pos": [
+      1.2,
+      0.05,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "go"
+     },
+     "points": []
+    },
+    {
+     "kind": "line",
+     "from": {
+      "part": 1,
+      "port": "tow"
+     },
+     "to": {
+      "part": 4,
+      "port": "bail"
+     },
+     "points": []
+    }
+   ]
+  },
+  "quack": {
+   "ticks": 240,
+   "parts": [
+    {
+     "id": 1,
+     "type": "quack",
+     "pos": [
+      0,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      0.0094,
+      1.2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "rift_gate": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "rift_gate",
+     "pos": [
+      0,
+      0.025,
+      0.2047
+     ],
+     "rot": [
+      0,
+      -90,
+      0
+     ],
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "rift_gate",
+     "pos": [
+      0.6,
+      0,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "stitch",
+     "pos": [
+      0,
+      0.8,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "topple_tile",
+     "pos": [
+      1.3,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "topple_tile",
+     "pos": [
+      1.4,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "topple_tile",
+     "pos": [
+      1.5,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "topple_tile",
+     "pos": [
+      1.6,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "grav_well": {
+   "ticks": 300,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      -0.5
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "grav_well",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      0.5,
+      0.0375,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "stitch",
+     "pos": [
+      -0.35,
+      0.0375,
+      0.35
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "glint",
+     "pos": [
+      0.1,
+      0.0078,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "tractor_beam": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.4,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "tractor_beam",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       15
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      0,
+      0.0375,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "hover_pad": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.5,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "hover_pad",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      0,
+      0.1609,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "ringer",
+     "pos": [
+      -0.5,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "force_wall": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "force_wall",
+     "pos": [
+      0.2,
+      0,
+      0
+     ],
+     "rot": [
+      90,
+      0,
+      0
+     ],
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "slope",
+     "pos": [
+      0.35,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "stitch",
+     "pos": [
+      0.55,
+      0.2203,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "ringer",
+     "pos": [
+      0.3,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       2
+      ]
+     ]
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 4,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "toggle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "coilgun_ring": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.4,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "coilgun_ring",
+     "pos": [
+      -0.3594,
+      0,
+      0
+     ],
+     "rot": [
+      -90,
+      0,
+      0
+     ],
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "ledge",
+     "pos": [
+      -0.1,
+      0.05,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "slope",
+     "pos": [
+      0.4,
+      0.1,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    },
+    {
+     "id": 6,
+     "type": "pig_iron",
+     "pos": [
+      0.6,
+      0.3297,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "topple_tile",
+     "pos": [
+      -1.3,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "topple_tile",
+     "pos": [
+      -1.4,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "topple_tile",
+     "pos": [
+      -1.5,
+      0.075,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "stasis_field": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.6,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "stasis_field",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       6
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "ringer",
+     "pos": [
+      -0.6,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    },
+    {
+     "id": 6,
+     "type": "boing",
+     "pos": [
+      0,
+      1,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "stitch",
+     "pos": [
+      0.15,
+      0.8,
+      0.1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "buzz_beacon": {
+   "ticks": 120,
+   "parts": [
+    {
+     "id": 1,
+     "type": "buzz_beacon",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "the_button",
+     "pos": [
+      -0.3,
+      0,
+      0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      -0.3,
+      0.2,
+      0.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "call"
+     },
+     "points": []
+    }
+   ]
+  },
+  "singularity": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "singularity",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "the_button",
+     "pos": [
+      -0.6,
+      0,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      -0.6,
+      0.2,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "stitch",
+     "pos": [
+      1.2,
+      0.0375,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "boing",
+     "pos": [
+      -1.5,
+      0.1203,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "brik",
+     "pos": [
+      0,
+      0.05,
+      1.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 8,
+     "type": "pig_iron",
+     "pos": [
+      0.9,
+      0.0594,
+      -1.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "topple_tile",
+     "pos": [
+      -0.8,
+      0.075,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 10,
+     "type": "topple_tile",
+     "pos": [
+      -0.9,
+      0.075,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 11,
+     "type": "topple_tile",
+     "pos": [
+      -1,
+      0.075,
+      1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 2,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "arm"
+     },
+     "points": []
+    }
+   ]
+  },
+  "grabber": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mains",
+     "pos": [
+      -0.4,
+      0,
+      -0.4
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "grabber",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       6,
+       8
+      ],
+      [
+       7,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "stitch",
+     "pos": [
+      -0.2172,
+      0.0375,
+      0.125
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_power",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 2,
+      "port": "in"
+     },
+     "points": []
+    }
+   ]
+  },
+  "goo_vat": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "goo_vat",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       10
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       1
+      ]
+     ]
+    },
+    {
+     "id": 2,
+     "type": "slope",
+     "pos": [
+      0.5,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    },
+    {
+     "id": 3,
+     "type": "stitch",
+     "pos": [
+      0.7,
+      0.2203,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "mochi": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "mochi",
+     "pos": [
+      0,
+      0,
+      -0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "pip",
+     "pos": [
+      0,
+      0,
+      1.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "pip": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "pip",
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "mochi",
+     "pos": [
+      0,
+      0,
+      -0.9
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "goby": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "fishbowl",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "goby",
+     "pos": [
+      0,
+      0.1297,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "thud",
+     "pos": [
+      0.0203,
+      1.1,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "bandit": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "pedal_rig",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "bandit",
+     "pos": [
+      -0.6,
+      0,
+      0.9
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "the_button",
+     "pos": [
+      2.2,
+      0,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      2.2,
+      0.4,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "bangstick",
+     "pos": [
+      2.5,
+      0.0391,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "detonator"
+     },
+     "points": []
+    }
+   ]
+  },
+  "hamster_drive": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "hamster_drive",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "pip",
+     "pos": [
+      0,
+      0.0422,
+      -0.0047
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "boing",
+     "pos": [
+      -0.0797,
+      0.8,
+      -0.05
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "cog",
+     "pos": [
+      0.35,
+      0.3,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "band",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 4,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "pedal_rig": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "pedal_rig",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "bandit",
+     "pos": [
+      0,
+      0.1797,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "the_button",
+     "pos": [
+      2.2,
+      0,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      2.2,
+      0.4,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "bangstick",
+     "pos": [
+      2.5,
+      0.0391,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "cog",
+     "pos": [
+      -0.1297,
+      0.3203,
+      0.25
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "detonator"
+     },
+     "points": []
+    },
+    {
+     "kind": "band",
+     "from": {
+      "part": 1,
+      "port": "out"
+     },
+     "to": {
+      "part": 7,
+      "port": "axle"
+     },
+     "points": []
+    }
+   ]
+  },
+  "fishbowl": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "fishbowl",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "goby",
+     "pos": [
+      0,
+      0.1297,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "slope",
+     "pos": [
+      0.6203,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0,
+     "props": [
+      [
+       0,
+       4
+      ]
+     ]
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      0.7797,
+      0.3594,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "trap_box": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "trap_box",
+     "pos": [
+      0,
+      0.6,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "anchor",
+     "pos": [
+      0,
+      1.4,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "ledge",
+     "pos": [
+      -0.1203,
+      1.2,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 5,
+     "type": "snipper",
+     "pos": [
+      -0.0797,
+      1.25,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "the_button",
+     "pos": [
+      0.9,
+      0,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 7,
+     "type": "thud",
+     "pos": [
+      0.9,
+      0.4,
+      0.6
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 9,
+     "type": "mochi",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": [
+    {
+     "kind": "line",
+     "from": {
+      "part": 1,
+      "port": "hook"
+     },
+     "to": {
+      "part": 2,
+      "port": "hook"
+     },
+     "points": []
+    },
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 6,
+      "port": "out"
+     },
+     "to": {
+      "part": 5,
+      "port": "close"
+     },
+     "points": []
+    }
+   ]
+  },
+  "biscuit": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "biscuit",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0.45,
+      0.4,
+      0.1
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "mochi",
+     "pos": [
+      0,
+      0,
+      2.2
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "henny": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "henny",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "thud",
+     "pos": [
+      0.8,
+      0.35,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "dusty": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "dusty",
+     "pos": [
+      0,
+      0,
+      -0.3
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "stitch",
+     "pos": [
+      0.0203,
+      0.0375,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "ledge",
+     "pos": [
+      0,
+      0,
+      0.45
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    }
+   ],
+   "links": []
+  },
+  "buzz": {
+   "ticks": 360,
+   "parts": [
+    {
+     "id": 1,
+     "type": "buzz_beacon",
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 2,
+     "type": "buzz",
+     "pos": [
+      0,
+      0.0406,
+      0
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 3,
+     "type": "the_button",
+     "pos": [
+      -0.35,
+      0,
+      0.25
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 4,
+     "type": "thud",
+     "pos": [
+      -0.35,
+      0.2,
+      0.25
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 0
+    },
+    {
+     "id": 6,
+     "type": "stitch",
+     "pos": [
+      0.55,
+      0.0375,
+      0.35
+     ],
+     "rot": {
+      "tag": 0
+     },
+     "flags": 512
+    }
+   ],
+   "links": [
+    {
+     "kind": "cable_signal",
+     "from": {
+      "part": 3,
+      "port": "out"
+     },
+     "to": {
+      "part": 1,
+      "port": "call"
+     },
+     "points": []
+    }
+   ]
+  }
+ }
+}

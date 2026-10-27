@@ -1,0 +1,11 @@
+{
+ "zoneLum": 0.3921,
+ "outsideLum": 0.1685,
+ "evDelta": 1.22,
+ "zoneSat": 0.131,
+ "outsideSat": 0.183,
+ "satDrop": -0.399,
+ "zonePixels": 345626,
+ "pass_ev": true,
+ "pass_sat": false
+}

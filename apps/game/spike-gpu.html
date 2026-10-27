@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNOCK-ON · GPU spike</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0b0d12; color: #e8ebf2; font: 13px/1.4 ui-monospace, Consolas, monospace; overflow: hidden; }
+      canvas { position: fixed; inset: 0; width: 100%; height: 100%; }
+      #hud { position: fixed; left: 12px; top: 12px; background: #11141bcc; padding: 10px 12px; border-radius: 8px; white-space: pre; pointer-events: none; }
+      #ctl { position: fixed; right: 12px; top: 12px; display: flex; gap: 6px; flex-wrap: wrap; max-width: 420px; justify-content: flex-end; }
+      button { background: #1b2030; color: #e8ebf2; border: 1px solid #2a3145; border-radius: 6px; padding: 6px 10px; font: inherit; cursor: pointer; }
+      button:hover { border-color: #2fd6ff; }
+    </style>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div id="hud">starting…</div>
+    <div id="ctl"></div>
+    <script type="module" src="/src/spike-gpu.ts"></script>
+  </body>
+</html>

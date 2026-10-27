@@ -1,0 +1,33 @@
+{
+  "name": "knockon",
+  "private": true,
+  "version": "0.1.0",
+  "description": "KNOCK-ON: a WebGPU 3D chain-reaction sandbox for one or two players",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @knockon/host dev",
+    "build": "pnpm -r --filter ./packages/** --filter ./apps/** run build",
+    "host": "pnpm --filter @knockon/host start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json && pnpm --filter @knockon/game typecheck",
+    "lint": "node tools/lint/determinism.mjs",
+    "assets": "node tools/assets.mjs",
+    "assets:check": "node tools/assets.mjs --selftest",
+    "assets:kit": "node tools/assets.mjs --kit-only",
+    "soak": "pnpm --filter @knockon/host soak --",
+    "test:mp": "pnpm --filter @knockon/host soak --",
+    "soak:critters": "node --disable-warning=ExperimentalWarning apps/host/soak/critters.ts",
+    "assets:build": "node tools/assets.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "typescript": "5.6.3",
+    "vitest": "2.1.8"
+  }
+}

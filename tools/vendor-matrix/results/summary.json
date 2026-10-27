@@ -1,0 +1,50 @@
+{
+ "pass": true,
+ "shared": 30,
+ "pairs": [
+  {
+   "a": "cpu",
+   "b": "d3d12",
+   "range": 120,
+   "diff": 0
+  },
+  {
+   "a": "cpu",
+   "b": "d3d11",
+   "range": 120,
+   "diff": 0
+  },
+  {
+   "a": "cpu",
+   "b": "swiftshader",
+   "range": 30,
+   "diff": 0
+  },
+  {
+   "a": "d3d12",
+   "b": "d3d11",
+   "range": 600,
+   "diff": 0
+  },
+  {
+   "a": "d3d12",
+   "b": "swiftshader",
+   "range": 30,
+   "diff": 0
+  },
+  {
+   "a": "d3d11",
+   "b": "swiftshader",
+   "range": 30,
+   "diff": 0
+  }
+ ],
+ "impls": [
+  "cpu",
+  "d3d12",
+  "d3d11",
+  "swiftshader"
+ ],
+ "smiStart": "NVIDIA GeForce RTX 5090, 17 %, 18181 MiB, 32607 MiB, 79.23 W",
+ "smiEnd": "NVIDIA GeForce RTX 5090, 0 %, 1852 MiB, 32607 MiB, 29.97 W"
+}

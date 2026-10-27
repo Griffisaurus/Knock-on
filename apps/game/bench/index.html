@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNOCK-ON perf harness</title>
+    <style>
+      html, body { margin: 0; background: #111317; color: #d8dce4; font: 13px/1.45 ui-monospace, Consolas, monospace; }
+      #view { position: fixed; left: 0; top: 0; }
+      #view canvas { display: block; }
+      #log { position: fixed; right: 0; top: 0; width: 460px; max-height: 100vh; overflow: auto; background: rgba(10, 12, 16, 0.82); padding: 10px 12px; white-space: pre-wrap; }
+      #log b { color: #fff; }
+    </style>
+  </head>
+  <body>
+    <div id="view"><canvas></canvas></div>
+    <div id="log">KNOCK-ON perf harness. Query: ?scene=kiloton|domino|big&amp;count=1000000&amp;tier=4|8|12|16|32&amp;preset=room|warehouse|arena|megastructure&amp;env=moon|hangar&amp;grains=0&amp;gov=0&amp;res=2560x1440&amp;mode=load|run|watch&amp;seconds=20</div>
+    <script type="module" src="./bench.ts"></script>
+  </body>
+</html>

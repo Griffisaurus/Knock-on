@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KNOCK-ON · Jolt determinism spike</title>
+  </head>
+  <body>
+    <div class="check">
+      <h1>Jolt determinism spike</h1>
+      <p class="detail">Runs the canonical 400-body scene (SIMULATION §3) for 600 ticks at 120 Hz with different WASM builds and thread counts. Every final hash must equal the Node golden.</p>
+      <div id="rows"></div>
+      <p class="detail" id="summary">Running…</p>
+    </div>
+    <script type="module" src="/src/spike-jolt.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+.vite/
+.claude/
+.vscode/
+.idea/
+# host runtime data (worlds, journals, backups)
+data/
+data-dev/
+# generated assets
+assets/build/
+# decoded 1993 raw resources stay local (reference/tim1/raw is large and not ours)
+reference/tim1/*
+!reference/tim1/README.md
+The-Incredible-Machine_DOS_EN.zip
+# local config overrides
+host.config.local.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.log
+.DS_Store
+Thumbs.db
+# Python caches (tools/blender)
+__pycache__/
+# Blender autosaves
+*.blend1
+*.blend@
+# local playtest captures (reports and small fixtures may still be committed)
+playtests/**/*.mp4
+playtests/**/*.webm

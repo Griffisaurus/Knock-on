@@ -1,0 +1,26 @@
+{
+  "name": "@knockon/host",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/main.ts",
+    "dev": "node --disable-warning=ExperimentalWarning ../../tools/dev.mjs",
+    "soak": "node --disable-warning=ExperimentalWarning soak/soak.ts"
+  },
+  "dependencies": {
+    "@fastify/static": "8.0.4",
+    "@knockon/docstore": "workspace:*",
+    "@knockon/format": "workspace:*",
+    "@knockon/net": "workspace:*",
+    "fastify": "5.2.1",
+    "msgpackr": "1.11.2",
+    "ws": "8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "8.5.13",
+    "@knockon/sim": "workspace:*",
+    "@knockon/jolt": "workspace:*",
+    "@knockon/parts-data": "workspace:*"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@knockon/jolt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Jolt Physics WASM integration and the M0 determinism spike (SIMULATION §4, PRODUCTION §2 M0)",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@knockon/detmath": "workspace:*",
+    "jolt-physics": "1.1.1"
+  }
+}

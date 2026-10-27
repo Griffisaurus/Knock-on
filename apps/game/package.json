@@ -1,0 +1,25 @@
+{
+  "name": "@knockon/game",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@knockon/assets": "workspace:*",
+    "@knockon/docstore": "workspace:*",
+    "@knockon/format": "workspace:*",
+    "@knockon/jolt": "workspace:*",
+    "@knockon/matter": "workspace:*",
+    "@knockon/net": "workspace:*",
+    "@knockon/parts-data": "workspace:*",
+    "@knockon/sim": "workspace:*"
+  },
+  "devDependencies": {
+    "@webgpu/types": "0.1.51",
+    "vite": "6.0.7"
+  }
+}

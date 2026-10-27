@@ -1,0 +1,24 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "typeRoots": [
+      "../../../apps/game/node_modules/@webgpu"
+    ],
+    "types": [
+      "types"
+    ]
+  },
+  "include": [
+    "*.ts",
+    "../gpu/*.ts",
+    "../src/**/*.ts"
+  ],
+  "exclude": [
+    "../src/node/**"
+  ]
+}
